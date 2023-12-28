@@ -1,0 +1,6 @@
+.uppertab{
+    display: flex;
+    width: 100vw;
+    background-color: var(--dark);
+    color :var(--light)
+}
