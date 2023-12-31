@@ -1,6 +1,58 @@
-.uppertab{
+.uppertab {
     display: flex;
     width: 100vw;
     background-color: var(--dark);
-    color :var(--light)
+    color: var(--light);
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-height: 8vh;
+}
+
+.uppertab .uppertableft {
+    /* margin: 0.4rem 1rem; */
+
+}
+
+.uppertab .uppertableft img {
+    max-width: 40vw;
+}
+
+.uppertab .uppertabright {
+    width: 34vw;
+}
+
+.uppertab .uppertabright ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+.uppertab .uppertabright ul li a {
+    text-decoration: none;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.animated::after {
+    content: '';
+    display: block;
+    width: 0;
+    /* Hide border initially */
+    height: 2px;
+    background: var(--Primary);
+    transition: width 0.3s ease;
+}
+
+.animated:hover::after {
+    width: 100%;
+    /* Show border on hover */
 }
