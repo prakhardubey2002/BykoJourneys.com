@@ -10,18 +10,24 @@ const UpperTab = () => {
     <>
       <div className={styles.uppertab}>
         <div className={styles.uppertableft}>
+          <Link to="/" >
           <img src={logo} alt="Logo" />
+          </Link>
         </div>
         <div className={styles.uppertabright}>
           <ul>
             <li className={styles.animated} >
               <a href="tel:+91-7307309609">
-                <CallIcon /> +91-7307309609
+                <CallIcon /> <p>
+                  +91-7307309609
+                </p>
               </a>
             </li>
             <li className={styles.animated} >
               <a href="mailto:info@bykojourneys.com">
-                <MailIcon /> info@bykojourneys.com
+                <MailIcon /> <p>
+                  info@bykojourneys.com
+                </p>
               </a>
             </li>
             <li className={styles.animated} >
