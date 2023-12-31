@@ -6,26 +6,30 @@ const Navbar = () => {
   const { data: apiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/location/getbycategory')
   return (
     <div className={styles.navbartop}>
-      {isPending && <div>Loading....</div>}
-      {!isPending && console.log(apiData)}
+      <div className={styles.navbarcontent} >
 
-      {apiData && Object.keys(apiData).map((category) => (
-        <div className={styles.dropdown} key={category}>
-          <p>{category}</p>
-          <div class={styles.dropdowncontent}>
-            <ul>
-              {apiData[category].map((location) => (
-                <li key={location.locationId}>
-                  <Link to={`/destination/${location.locationId}/${location.name}`}>
-                    {location.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+
+        {/* {isPending && <div>Loading....</div>}
+      {!isPending && console.log(apiData)} */}
+
+        {apiData && Object.keys(apiData).map((category) => (
+          <div className={styles.dropdown} key={category}>
+            <p>{category}</p>
+            <div class={styles.dropdowncontent}>
+              <ul>
+                {apiData[category].map((location) => (
+                  <li className={styles.animated}  key={location.locationId}>
+                    <Link to={`/destination/${location.locationId}/${location.name}`}>
+                      {location.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
           </div>
-
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
