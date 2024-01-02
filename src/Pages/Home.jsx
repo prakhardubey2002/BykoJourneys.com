@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import SearchIcon from '@mui/icons-material/Search';
 import Lottie from "lottie-react";
@@ -47,7 +48,25 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-      <Explorethumbnail/>
+      <Explorethumbnail />
+      <div className="expertcontactsection">
+        <div className="top">
+          <h2>
+            Just sit back, relax, and let our team handle your <span> travel </span>plans!
+          </h2>
+          <p>Our goal is to transform your ordinary travel experience into an extraordinary one.</p>
+        </div>
+        <div>
+          <Link to="/contactus">
+            <button className='button' >
+              Talk with our expert
+            </button>
+          </Link>
+        </div>
+
+      </div>
+
+
     </div>
   )
 }

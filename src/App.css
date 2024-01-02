@@ -17,21 +17,25 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
+
 /* Scrollbar css */
 
 ::-webkit-scrollbar {
   width: 12px;
 }
-::-webkit-scrollbar-track {
- 
-}
+
+::-webkit-scrollbar-track {}
+
 ::-webkit-scrollbar-thumb {
   background: var(--Primary);
   border-radius: 2rem;
 }
+
 ::-webkit-scrollbar-thumb:hover {
-  background: #f7d739;;
+  background: #f7d739;
+  ;
 }
+
 /* Scrollbar css */
 .App {
   min-height: 100vh;
@@ -55,6 +59,7 @@ html {
   color: var(--light);
 
 }
+
 .Home::before {
   content: "";
   position: absolute;
@@ -80,21 +85,25 @@ html {
   align-items: center;
   margin: 0 1rem;
 }
-.Home .homereview .review h4{
+
+.Home .homereview .review h4 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Home .homereview .review h3{
+
+.Home .homereview .review h3 {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   font-size: 1rem;
 }
-.Home .homereview .review .star{
+
+.Home .homereview .review .star {
   color: #f0ca02;
 }
+
 .Home .homereview .homeanime {
   width: 60px;
   max-width: 22vw;
@@ -142,9 +151,11 @@ html {
   /* background-color: rgba(255, 255, 255, 0.15);
   filter: blur(25); */
 }
-.Home .homesearch input ::placeholder{
+
+.Home .homesearch input ::placeholder {
   font-size: 1.1rem;
 }
+
 .searchicon {
   background-color: var(--Primary);
   color: var(--light);
@@ -160,18 +171,62 @@ html {
   transform: scale(1.08);
 
 }
-@media only screen and (max-width: 768px) {
-  
-.Home .Homehead h2 {
-  font-size: 2.4rem;
+
+.expertcontactsection {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 34vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-  .Home .homereview .review{
+.expertcontactsection .top{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+.expertcontactsection  .top h2 {
+  color: var(--dark);
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 2.5rem;
+  /* max-width: 60%; */
+  text-align: center;
+  width: 60%;
+
+}
+.expertcontactsection  .button{
+  outline: none;
+  border: 0px;
+  background-color: var(--Primary);
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: 0.2s all ease-in-out;
+}
+.expertcontactsection  .button:hover{
+  transform: scale(1.05);
+  background-color: var(--dark);
+  color: var(--light);
+
+}
+@media only screen and (max-width: 768px) {
+
+  .Home .Homehead h2 {
+    font-size: 2.4rem;
+  }
+
+  .Home .homereview .review {
     font-size: 0.8rem;
   }
-  .homereview{
+
+  .homereview {
     max-width: 80vw;
   }
 }
-@media only screen and (min-width: 280px) and (max-width: 568px) {
- 
-}
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {}
