@@ -1,0 +1,126 @@
+.TopValues {
+    width: 100vw;
+    overflow: hidden;
+    min-height: 28vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.TopValues .left {
+    /* width: 100%; */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.TopValues .left h2 {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+    max-width: 60%;
+}
+
+.TopValues .left p {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+    max-width: 84%;
+}
+
+.TopValues .left h2 span {
+    color: var(--Primary);
+}
+
+.TopValues .right {
+    display: flex;
+}
+
+.TopValues .right .values {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.TopValues .right .values .valueanime {
+    width: 200px;
+    max-height: 200px;
+}
+
+.TopValues .right p {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    /* max-width: 84%; */
+}
+
+@media only screen and (max-width: 768px) {
+    .TopValues {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TopValues .left h2 {
+        max-width: 100%;
+        font-size: 2rem;
+    }
+
+    .TopValues .left p {
+        max-width: 100%;
+    }
+
+    .TopValues .right .values {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TopValues .right .values h3 {
+        font-size: 1.4rem;
+    }
+
+    .TopValues .right .values p {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {
+
+    .TopValues {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TopValues .left h2 {
+        max-width: 100%;
+        font-size: 2rem;
+    }
+
+    .TopValues .left p {
+        max-width: 100%;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+
+    .TopValues .right .values {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .TopValues .right .values h3 {
+        font-size: 1.1rem;
+    }
+
+    .TopValues .right .values p {
+        font-size: 0.8rem;
+    }
+    .TopValues .right .values .valueanime {
+        max-width: 20vw;
+    }
+}

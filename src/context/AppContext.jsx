@@ -1,12 +1,16 @@
 import React, { useContext, useEffect, useState } from "react";
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
+    const [navcontent, setNavcontent] = useState({
+        data: false,
+        error: "No error",
+        load: true,
+    })
     useEffect(() => {
-        
-    }, [])
-    const [destinationarray, SetDestinationarray] = useState(["Kasoli", "Raj-Kosh", "Delhi", "Noida"]);
+        console.log(navcontent.data)
+    }, [navcontent])
 
-    return <AppContext.Provider value={{ destinationarray }} >
+    return <AppContext.Provider value={{ navcontent, setNavcontent }} >
         {children}
     </AppContext.Provider>
 };
