@@ -11,6 +11,8 @@ const Explorethumbnail = () => {
         <div className={styles.landingpagethumbnailsection}>
             <div className={styles.top}>
                 <h2>Explore Our <span> Trending</span> Destinations</h2>
+                <p>All time favorite</p>
+                <br />
             </div>
             <div className={styles.bottom}>
                 {!isPending && apiData && Object.keys(apiData).map((category) => (

@@ -7,9 +7,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 .landingpagethumbnailsection .top{
     margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.landingpagethumbnailsection .top p{
+    font-size: 1rem;
+    font-weight: 400;
 }
 .landingpagethumbnailsection .top h2 {
     color: var(--dark);
@@ -28,12 +37,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    max-width: 80vw ;
+    max-width: 90vw ;
 }
 @media only screen and (max-width: 768px) {
     .landingpagethumbnailsection .top h2 {
         /* max-width: 100%; */
         font-size: 2rem;
+    text-align: center;
     }
 }
 
