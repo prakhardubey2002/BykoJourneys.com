@@ -9,9 +9,10 @@ import ReviewLottie from '../animation/ReviewLottie.json'
 import StarIcon from '@mui/icons-material/Star';
 import TopValues from '../Components/TopValues/TopValues';
 import Explorethumbnail from '../Components/Explorethumbnail/Explorethumbnail';
+import LandingPageSlider from '../Components/LandingSlider/LandingSlider';
 const Home = () => {
   return (
-    <div>
+    <div >
       <div className="Home">
         <div className="Homehead">
           <h2>Reboot the magic of travel with</h2>
@@ -48,7 +49,7 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-      <Explorethumbnail />
+      {/* <Explorethumbnail /> */}
       <div className="expertcontactsection">
         <div className="top">
           <h2>
@@ -65,6 +66,7 @@ const Home = () => {
         </div>
 
       </div>
+      <LandingPageSlider />
 
 
     </div>

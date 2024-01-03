@@ -12,14 +12,16 @@ import Contactus from './Pages/Contactus';
 function App() {
   return (
     <div className="App">
-      <UpperTab />
-      <Navbar/>
+      <div className="topfixed">
+        <UpperTab />
+        <Navbar />
+      </div>
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/about' element={<About />} />
-        <Route path='/destination/:id/:name' element={<Destinationtemplate/>}/>
-        <Route path='/contactus' element={<Contactus/>}/>
+        <Route path='/destination/:id/:name' element={<Destinationtemplate />} />
+        <Route path='/contactus' element={<Contactus />} />
       </Routes>
 
     </div>
