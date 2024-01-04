@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import SearchIcon from '@mui/icons-material/Search';
@@ -10,7 +10,23 @@ import StarIcon from '@mui/icons-material/Star';
 import TopValues from '../Components/TopValues/TopValues';
 import Explorethumbnail from '../Components/Explorethumbnail/Explorethumbnail';
 import LandingPageSlider from '../Components/LandingSlider/LandingSlider';
+import { useGlobalContext } from '../context/AppContext';
+import useFetch from '../hooks/useFetch';
 const Home = () => {
+ 
+  const { eventdata, setEventdata } = useGlobalContext();
+  
+  const { data: eventapiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/package/getall');
+  useEffect(() => {
+    // Update eventcontent only when apiData or isPending changes
+    setEventdata({
+      ...eventdata,
+      data: eventapiData,
+      error: error,
+      load: isPending,
+    });
+  }, [eventapiData, isPending, error]);
+  
   return (
     <div >
       <div className="Home">
@@ -55,6 +71,7 @@ const Home = () => {
           <h2>
             Just sit back, relax, and let our team handle your <span> travel </span>plans!
           </h2>
+          <br />
           <p>Our goal is to transform your ordinary travel experience into an extraordinary one.</p>
         </div>
         <div>
@@ -66,8 +83,8 @@ const Home = () => {
         </div>
 
       </div>
-      <LandingPageSlider />
-
+      {/* <LandingPageSlider /> */}
+      
 
     </div>
   )

@@ -6,11 +6,20 @@ const AppProvider = ({ children }) => {
         error: "No error",
         load: true,
     })
+    const [eventdata, setEventdata] = useState({
+        data: false,
+        error: "No error",
+        load: true,
+    })
     useEffect(() => {
-        console.log(navcontent.data)
-    }, [navcontent])
+        console.log("NavContent Data :");
+        console.log(navcontent.data);
+        console.log("Event Package Data :");
+        console.log(eventdata.data)
 
-    return <AppContext.Provider value={{ navcontent, setNavcontent }} >
+    }, [navcontent,eventdata])
+
+    return <AppContext.Provider value={{ navcontent, setNavcontent, eventdata, setEventdata }} >
         {children}
     </AppContext.Provider>
 };
