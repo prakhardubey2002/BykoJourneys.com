@@ -10,23 +10,10 @@ import StarIcon from '@mui/icons-material/Star';
 import TopValues from '../Components/TopValues/TopValues';
 import Explorethumbnail from '../Components/Explorethumbnail/Explorethumbnail';
 import LandingPageSlider from '../Components/LandingSlider/LandingSlider';
-import { useGlobalContext } from '../context/AppContext';
-import useFetch from '../hooks/useFetch';
 import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 const Home = () => {
 
-  const { eventdata, setEventdata } = useGlobalContext();
 
-  const { data: eventapiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/package/getall');
-  useEffect(() => {
-    // Update eventcontent only when apiData or isPending changes
-    setEventdata({
-      ...eventdata,
-      data: eventapiData,
-      error: error,
-      load: isPending,
-    });
-  }, [eventapiData, isPending, error]);
 
   return (
     <div >
@@ -66,7 +53,7 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-      {/* <Explorethumbnail /> */}
+      <Explorethumbnail />
       <div className="expertcontactsection">
         <div className="top">
           <h2>
@@ -84,9 +71,8 @@ const Home = () => {
         </div>
 
       </div>
-      {/* <LandingPageSlider /> */}
-      <LandingPageTrip/>
-
+      <LandingPageSlider />
+      <LandingPageTrip  />
     </div>
   )
 }

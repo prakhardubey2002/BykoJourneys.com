@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -11,8 +11,24 @@ import 'swiper/css/scrollbar';
 import "swiper/css/autoplay";
 import styles from "./style.module.css"
 import Tripcard from '../Tripcard/Tripcard';
+import { useGlobalContext } from '../../context/AppContext';
+import useFetch from '../../hooks/useFetch';
 const LandingPageTrip = () => {
+    const { eventdata, setEventdata } = useGlobalContext();
+
+    const { data: eventapiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/package/getall');
+    useEffect(() => {
+        // Update eventcontent only when apiData or isPending changes
+        setEventdata({
+            ...eventdata,
+            data: eventapiData,
+            error: error,
+            load: isPending,
+        });
+    }, [eventapiData, isPending, error]);
     return (
+
+
         <div className={styles.tripssection}>
             <div>
                 <h2>
@@ -21,38 +37,45 @@ const LandingPageTrip = () => {
             </div>
             <br />
             <Swiper className={styles.tripslide}
-                // install Swiper modules
+
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                 spaceBetween={20}
                 slidesPerView={3}
-                // navigation
+                breakpoints={{
+
+                    280: {
+                      // width: 280,
+                      slidesPerView: 1,
+                    },
+                    857: {
+                      // width: 576,
+                      slidesPerView: 2,
+                    },
+                    1200: {
+                      // width: 768,
+                      slidesPerView: 3,
+                    },
+                  }}
                 autoplay={{
                     delay: 2000,
                     pauseOnMouseEnter: true,
                     disableOnInteraction: false
                 }}
                 loop
-                // pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log('slide change')}
-            >
-                <SwiperSlide   >
-                    <Tripcard />
-                </SwiperSlide>
-                <SwiperSlide  >
-                    <Tripcard />
-                </SwiperSlide>
-                <SwiperSlide  >
-                    <Tripcard />
-                </SwiperSlide>
-                <SwiperSlide  >
-                    <Tripcard />
-                </SwiperSlide>
 
-                {/* ... */}
+            >
+                {
+                    !isPending && eventapiData?.map((eventx) => (
+                        // console.log(eventx)
+                        <SwiperSlide className={styles.slides}  >
+                            <Tripcard key={eventx._id} data={eventx} />
+                        </SwiperSlide>
+                    ))
+                }
+
             </Swiper>
         </div>
+
     )
 }
 

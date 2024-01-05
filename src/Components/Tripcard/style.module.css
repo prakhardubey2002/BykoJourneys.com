@@ -2,9 +2,10 @@
     /* border: 1px solid black; */
     width: fit-content;
     padding: 1rem;
-    width: 420px;
-    min-height: 400px;
-    max-width: 50vw;
+    width: 400px;
+    height: fit-content;
+    min-height: 420px;
+    max-width:32vw;
     border-radius: 1.2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     display: flex;
@@ -119,7 +120,7 @@
 
 .tripcard .tripdetails {
     display: flex;
-    width: 84%;
+    width: 90%;
     justify-content: space-between;
     position: relative;
     /* background-color: antiquewhite; */
@@ -144,7 +145,7 @@
     left: 10%;
     content: '';
     width: 24%;
-    height: 1px;
+    height: 0.5px;
     /* color: var(--Primary); */
     background-color: var(--dark);
 }
@@ -157,8 +158,11 @@
 .tripcard .tripdetails .tripdetailcontent .text p {
     font-size: 0.8rem;
 }
+.tripcard .tripdetails .tripdetailcontent .text h4 {
+    font-size: 0.8rem;
+}
 
-.tripcard button {
+.tripcard a {
     width: 100%;
     padding: 0.8rem 1rem;
     border-radius: 0.8rem;
@@ -169,10 +173,26 @@
     font-size: 16px;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.tripcard button:hover {
+.tripcard a:hover {
     transform: scale(1.05);
     color: var(--light);
     background-color: var(--dark);
+}
+@media only screen and (max-width: 1200px) {
+    .tripcard{
+        max-width: 50vw;
+    }
+   
+}
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {
+    .tripcard{
+        max-width: 88vw;
+    }
 }
