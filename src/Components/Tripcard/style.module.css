@@ -1,0 +1,178 @@
+.tripcard {
+    /* border: 1px solid black; */
+    width: fit-content;
+    padding: 1rem;
+    width: 420px;
+    min-height: 400px;
+    max-width: 50vw;
+    border-radius: 1.2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    transition: 0.2s all ease-in-out;
+}
+
+.tripcard:hover {
+    transform: scale(1.04);
+    /* color: var(--light); */
+    /* background-color: var(--dark); */
+}
+
+.tripcard .top p {
+    position: absolute;
+    top: 6%;
+    right: 0%;
+    z-index: 8;
+
+}
+
+.cardprice {
+    display: inline-block;
+
+    width: auto;
+    height: 38px;
+
+    background-color: var(--Primary);
+    -webkit-border-radius: 3px 4px 4px 3px;
+    -moz-border-radius: 3px 4px 4px 3px;
+    border-radius: 3px 4px 4px 3px;
+
+    border-left: 1px solid var(--Primary);
+
+    /* This makes room for the triangle */
+    margin-left: 19px;
+
+    position: relative;
+
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 38px;
+    padding: 0 10px 0 10px;
+}
+
+/* Makes the triangle */
+.cardprice:before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -19px;
+    width: 0;
+    height: 0;
+    border-top: 19px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-right: 19px solid var(--Primary);
+}
+
+/* Makes the circle */
+.cardprice:after {
+    content: "";
+    background-color: white;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    display: block;
+    position: absolute;
+    left: -9px;
+    top: 17px;
+}
+
+.tripcard .top {
+    width: 100%;
+    /* position: relative; */
+}
+
+.tripcard .top .bannerimageparent {
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 100%;
+    height: 200px;
+    /* padding: 1rem; */
+    /* border: 1px solid black; */
+    position: relative;
+}
+
+.tripcard .top .bannerimageparent .bannertripimg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    object-fit: cover;
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+.tripcard .bottom h2 {
+    font-size: 1.2rem;
+}
+
+.tripcard .bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.tripcard .tripdetails {
+    display: flex;
+    width: 84%;
+    justify-content: space-between;
+    position: relative;
+    /* background-color: antiquewhite; */
+    /* border-bottom: 2px solid yellow; */
+}
+
+.tripcard .tripdetails .tripdetailicon {
+    color: var(--Primary);
+    margin: 0.2rem;
+}
+
+.tripcard .tripdetails .tripdetailcontent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.2rem;
+}
+
+.tripcard .tripdetails::after {
+    position: absolute;
+    bottom: -8%;
+    left: 10%;
+    content: '';
+    width: 24%;
+    height: 1px;
+    /* color: var(--Primary); */
+    background-color: var(--dark);
+}
+
+.tripcard .tripdetails .tripdetailcontent .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.tripcard .tripdetails .tripdetailcontent .text p {
+    font-size: 0.8rem;
+}
+
+.tripcard button {
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 0.8rem;
+    background-color: var(--Primary);
+    color: var(--light);
+    border: 0px;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+}
+
+.tripcard button:hover {
+    transform: scale(1.05);
+    color: var(--light);
+    background-color: var(--dark);
+}

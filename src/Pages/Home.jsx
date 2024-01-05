@@ -12,10 +12,11 @@ import Explorethumbnail from '../Components/Explorethumbnail/Explorethumbnail';
 import LandingPageSlider from '../Components/LandingSlider/LandingSlider';
 import { useGlobalContext } from '../context/AppContext';
 import useFetch from '../hooks/useFetch';
+import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 const Home = () => {
- 
+
   const { eventdata, setEventdata } = useGlobalContext();
-  
+
   const { data: eventapiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/package/getall');
   useEffect(() => {
     // Update eventcontent only when apiData or isPending changes
@@ -26,7 +27,7 @@ const Home = () => {
       load: isPending,
     });
   }, [eventapiData, isPending, error]);
-  
+
   return (
     <div >
       <div className="Home">
@@ -84,7 +85,7 @@ const Home = () => {
 
       </div>
       {/* <LandingPageSlider /> */}
-      
+      <LandingPageTrip/>
 
     </div>
   )
