@@ -1,0 +1,51 @@
+.Reviewmain {
+    min-height: 80vh;
+    width: 100vw;
+    overflow: hidden;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Reviewmain h2 {
+    color: var(--dark);
+    font-weight: 600;
+    font-size: 2.8rem;
+    line-height: 2.5rem;
+    text-align: center;
+    max-width: 80vw;
+}
+
+.Reviewmain h2 span {
+    color: var(--Primary);
+}
+
+.Reviewmain .bottom {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 768px) {
+    .Reviewmain h2 {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.2rem;
+        padding: 0.4rem 0;
+
+
+    }
+
+    .Reviewmain p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {
+    
+}

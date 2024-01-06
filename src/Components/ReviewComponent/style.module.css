@@ -1,0 +1,148 @@
+.reviewcomponent {
+    width: 560px;
+    height: fit-content;
+    padding: 1.4rem;
+    margin: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 84vw;
+}
+
+.reviewcomponent .left {
+    /* width: 54%; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aqua; */
+}
+
+.reviewcomponent .left .topcontent {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.reviewcomponent .left img {
+    border-radius: 4rem;
+    /* transform: scale(1.2); */
+    border: 2px solid var(--Primary);
+    margin-right: 0.5rem;
+}
+
+.reviewcomponent .star {
+    display: flex;
+    /* transform: scale(0.8); */
+}
+
+.reviewcomponent .star .staricon {
+    font-size: 18px;
+    color: var(--Primary);
+    /* width: 12px; */
+
+}
+
+.reviewcomponent .left .text {
+    width: 100%;
+    /* background-color: aliceblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewcomponent h2 {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 600;
+    width: fit-content;
+
+}
+
+.reviewcomponent .reviewContent {
+    padding: 0.2rem;
+    position: relative;
+}
+
+.reviewcomponent .reviewContent .reviewtext {
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+
+}
+.reviewcomponent .right{
+    margin-top: 0.2rem;
+}
+.reviewcomponent .right .text p {
+    font-weight: 400;
+    color: rgba(12, 12, 12, 0.65);
+    font-size: 13.33px;
+    line-height: 20px;
+
+}
+
+.textstart {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 40px;
+    color: var(--Primary);
+    position: absolute;
+    top: -12%;
+    left: -3%;
+
+}
+
+.reviewcomponent .reviewContent a {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: var(--Primary);
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    h2 {
+        width: 100%;
+        font-size: 1.6rem;
+        line-height: 1.2rem;
+        padding: 0.4rem 0;
+    }
+
+    p {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .reviewcomponent .star {
+        display: flex;
+        /* transform: scale(0.8); */
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+    }
+
+    .textstart {
+        left: -5%;
+
+
+    }
+    
+    .reviewcomponent .reviewContent a {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: var(--Primary);
+        text-decoration: none;
+    }
+
+
+}
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {}
