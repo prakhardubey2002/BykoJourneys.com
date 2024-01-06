@@ -12,6 +12,7 @@ import Explorethumbnail from '../Components/Explorethumbnail/Explorethumbnail';
 import LandingPageSlider from '../Components/LandingSlider/LandingSlider';
 import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 import Review from "../Components/Reviewsection/Review"
+import Faq from '../Components/FAQ/Faq';
 const Home = () => {
 
 
@@ -54,7 +55,7 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-      {/* <Explorethumbnail /> */}
+      <Explorethumbnail />
       <div className="expertcontactsection">
         <div className="top">
           <h2>
@@ -72,9 +73,10 @@ const Home = () => {
         </div>
 
       </div>
-      {/* <LandingPageSlider /> */}
-      {/* <LandingPageTrip  /> */}
+      <LandingPageSlider />
+      <LandingPageTrip  />
       <Review />
+      <Faq/>
     </div>
   )
 }
