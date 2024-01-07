@@ -231,6 +231,21 @@ html {
   color: var(--light);
 
 }
+/* Destination page */
+.destinationmain{
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.destinationmain .topimgsection{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* Destination page */
 
 @media only screen and (max-width: 768px) {
 

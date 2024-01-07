@@ -1,10 +1,39 @@
 import React from 'react'
 import { useParams } from 'react-router-dom';
-
+import Lottie from "lottie-react";
+import GoogleLottie from '../animation/GoogleLottie.json'
+import FacebookLottie from '../animation/FacebookLottie.json'
+import ReviewLottie from '../animation/ReviewLottie.json'
+import StarIcon from '@mui/icons-material/Star';
 const Destinationtemplate = () => {
-  const {id,name} = useParams();
+  const { id, name } = useParams();
   return (
-    <div>Destinationtemplate : {id} name :{name} </div>
+    <div className="destinationmain">
+      <div className="topimgsection">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={name} />
+        <div className="text">
+          <h2>{name}</h2>
+          <span><h4>Discover The Land Of Happiness, Peace And Serenity</h4></span>
+        </div>
+        <div className="homereview">
+          <div className="review">
+            <Lottie className='homeanime' animationData={GoogleLottie} loop={true} />
+            <h3>Google review</h3>
+            <h4> <StarIcon className='star' />4.8</h4>
+          </div>
+          <div className="review">
+            <Lottie className='homeanime' animationData={FacebookLottie} loop={true} />
+            <h3>Facebook Reviews</h3>
+            <h4>  <StarIcon className='star' /> 4.5</h4>
+          </div>
+          <div className="review">
+            <Lottie className='homeanime' animationData={ReviewLottie} loop={true} />
+            <h3>Trip Advisor Reviews</h3>
+            <h4>  <StarIcon className='star' /> 4.7</h4>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 

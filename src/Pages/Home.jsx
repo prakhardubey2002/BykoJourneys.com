@@ -55,7 +55,7 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-      <Explorethumbnail />
+      {/* <Explorethumbnail /> */}
       <div className="expertcontactsection">
         <div className="top">
           <h2>
@@ -73,8 +73,8 @@ const Home = () => {
         </div>
 
       </div>
-      <LandingPageSlider />
-      <LandingPageTrip  />
+      {/* <LandingPageSlider /> */}
+      {/* <LandingPageTrip  /> */}
       <Review />
       <Faq/>
     </div>
