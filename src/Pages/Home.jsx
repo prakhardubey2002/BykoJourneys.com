@@ -73,8 +73,8 @@ const Home = () => {
         </div>
 
       </div>
-      {/* <LandingPageSlider /> */}
-      {/* <LandingPageTrip  /> */}
+      <LandingPageSlider />
+      <LandingPageTrip  />
       <Review />
       <Faq/>
     </div>
