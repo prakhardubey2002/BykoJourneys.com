@@ -11,15 +11,15 @@ const ReviewComponent = ({ data }) => {
                         <h2>{data.name}</h2>
                         <p>{data.Date}</p>
                     </div>
-                        <div className={styles.star} >
-                            <span> < StarIcon className={styles.staricon} /></span>
-                            <span> < StarIcon className={styles.staricon} /></span>
-                            <span> < StarIcon className={styles.staricon} /></span>
-                            <span> < StarIcon className={styles.staricon} /></span>
-                            <span> < StarIcon className={styles.staricon} /></span>
+                    <div className={styles.star} >
+                        <span> < StarIcon className={styles.staricon} /></span>
+                        <span> < StarIcon className={styles.staricon} /></span>
+                        <span> < StarIcon className={styles.staricon} /></span>
+                        <span> < StarIcon className={styles.staricon} /></span>
+                        <span> < StarIcon className={styles.staricon} /></span>
 
-                        </div>
-                    
+                    </div>
+
                 </div>
             </div>
             {/* <br /> */}
@@ -29,7 +29,7 @@ const ReviewComponent = ({ data }) => {
                     <span className={styles.textstart} >“</span>
                     <p className={styles.reviewtext} >
                         {data.review.substring(0, 200)}...
-                        <a href={data.mobReadmoreLink} target="_blank" rel="noopener noreferrer">Read More</a>
+                        <a href={data.ReadmoreLink} target="_blank" rel="noopener noreferrer">Read More</a>
                     </p>
                     <br />
                     <a href={data.ReadmoreLink} target="_blank" rel="noopener noreferrer">Read More</a>

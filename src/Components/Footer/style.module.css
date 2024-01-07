@@ -1,0 +1,13 @@
+.Footer{
+    min-height: 10vh;
+    width: 100vw;
+    background-color: var(--dark);
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Footer span{
+    color: var(--Primary);
+}
