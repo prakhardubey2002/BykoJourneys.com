@@ -10,10 +10,13 @@ const Destinationtemplate = () => {
   return (
     <div className="destinationmain">
       <div className="topimgsection">
-        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={name} />
+        <img className="topbackgroundimage" src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt={name} />
+        <div className="overlay">
+          
+        </div>
         <div className="text">
           <h2>{name}</h2>
-          <span><h4>Discover The Land Of Happiness, Peace And Serenity</h4></span>
+          <h4>Discover The Land Of Happiness, Peace And Serenity</h4>
         </div>
         <div className="homereview">
           <div className="review">

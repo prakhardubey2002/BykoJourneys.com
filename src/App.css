@@ -49,12 +49,13 @@ html {
   /* position: sticky; */
   z-index: 9999;
 }
+
 /* .App .Footer{
   position: absolute;
   bottom: 0;
 } */
 .Home {
- 
+
   min-width: 100vw;
   min-height: 84vh;
   background-image: url(./assets/Background-image.jpg);
@@ -211,9 +212,11 @@ html {
   width: 60%;
 
 }
-.expertcontactsection .top h2 span{
+
+.expertcontactsection .top h2 span {
   color: var(--Primary);
 }
+
 .expertcontactsection .button {
   outline: none;
   border: 0px;
@@ -231,20 +234,127 @@ html {
   color: var(--light);
 
 }
+
 /* Destination page */
-.destinationmain{
-  min-height: 100vh;
+.destinationmain {
+  min-height: 80vh;
   width: 100vw;
   overflow: hidden;
 }
-.destinationmain .topimgsection{
-  height: 100vh;
+
+.destinationmain .topimgsection {
+  height: 80vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 }
+
+.destinationmain .topimgsection .text {
+  position: absolute;
+  top: 24%;
+  left: 12%;
+  line-height: 1.8rem;
+
+}
+
+.destinationmain .topimgsection .text h2 {
+  color: var(--light);
+  width: fit-content;
+  border-bottom: 6px solid var(--Primary);
+  border-left: 6px solid var(--Primary);
+  padding: 0.6rem;
+  max-width: 80vw;
+  font-weight: 600;
+  font-size: 45px;
+  line-height: 53px;
+  text-shadow: rgba(0, 0, 0, 0.2) 0px 4px 5px;
+  padding-left: 15px;
+  margin-bottom: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 36px;
+  backdrop-filter: blur(10px);
+
+}
+
+.destinationmain .topimgsection .text h4 {
+  background-color: var(--light);
+  color: var(--dark);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: 0.05em;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px;
+  padding: 8px 12px;
+  border-radius: 3px;
+  border-left: 6px solid var(--Primary);
+}
+
+.destinationmain .topimgsection .topbackgroundimage {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.destinationmain .topimgsection .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+ 
+}
+
+
+.destinationmain .topimgsection .homereview {
+  position: absolute;
+  bottom: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  color: var(--light);
+  
+}
+
+.destinationmain .topimgsection .review {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+
+}
+
+.destinationmain .topimgsection .review h4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinationmain .topimgsection .review h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.destinationmain .topimgsection .review .star {
+  color: #f0ca02;
+}
+
+.destinationmain .topimgsection .homeanime {
+  width: 60px;
+  max-width: 22vw;
+}
+
 /* Destination page */
 
 @media only screen and (max-width: 768px) {
@@ -258,13 +368,22 @@ html {
     font-size: 0.8rem;
   }
 
+  .destinationmain .topimgsection .homereview .review {
+    font-size: 0.8rem;
+  }
+
   .homereview {
     max-width: 80vw;
   }
+
+  .destinationmain .topimgsection .homereview {
+    max-width: 80vw;
+  }
+
   .expertcontactsection {
     padding: 1rem;
   }
-  
+
   .expertcontactsection .top {
     display: flex;
     justify-content: center;
@@ -272,24 +391,47 @@ html {
     flex-direction: column;
     padding: 1rem 0;
   }
-  
+
   .expertcontactsection .top h2 {
     width: 100%;
     font-size: 1.6rem;
     line-height: 1.2rem;
     padding: 0.4rem 0;
-    
-  
+
+
   }
-  .expertcontactsection p{
+
+  .expertcontactsection p {
     font-size: 0.8rem;
     text-align: center;
   }
+
   .expertcontactsection .button {
     padding: 0.5rem 1rem;
-    
+
   }
-  
+
+  .destinationmain .topimgsection .text {
+
+    left: 8%;
+  }
+
+  .destinationmain .topimgsection .text h2 {
+    max-width: 100%;
+    font-size: 25px;
+    line-height: 30px;
+    border-width: 4px;
+    padding-left: 5px 10px;
+  }
+
+  .destinationmain .topimgsection .text h4 {
+    font-size: 16px;
+    line-height: 130%;
+    padding: 5px 10px;
+    width: fit-content;
+    max-width: 80vw;
+  }
+
 }
 
 @media only screen and (min-width: 280px) and (max-width: 568px) {}
