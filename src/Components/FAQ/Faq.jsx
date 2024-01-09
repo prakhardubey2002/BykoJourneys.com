@@ -29,8 +29,8 @@ const Faq = () => {
                 </div>
             </div>
             <div className={styles['accordion-item']}>
-                <input type="checkbox" id="accordion1" />
-                <label htmlFor="accordion1" className={styles['accordion-item-title']}>
+                <input type="checkbox" id="accordion3" />
+                <label htmlFor="accordion3" className={styles['accordion-item-title']}>
                     <span className={styles.icon}></span>
                     Why Bykojourneys?
                 </label>
@@ -42,8 +42,8 @@ const Faq = () => {
             </div>
 
             <div className={styles['accordion-item']}>
-                <input type="checkbox" id="accordion2" />
-                <label htmlFor="accordion2" className={styles['accordion-item-title']}>
+                <input type="checkbox" id="accordion4" />
+                <label htmlFor="accordion4" className={styles['accordion-item-title']}>
                     <span className={styles.icon}></span>
                     Is experience hassle free with BykoJourney?
                 </label>

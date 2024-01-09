@@ -19,7 +19,7 @@
 .accordion h1 span{
     color: var(--Primary);
 }
-.accordion-item {
+.accordion-itemzx {
     margin-top: 16px;
     border: 1px solid #fcfcfc;
     border-radius: 6px;
@@ -30,7 +30,7 @@
     overflow: hidden;
 }
 
-.accordion-item .accordion-item-title {
+.accordion-itemzx .accordion-item-titlewertx {
     position: relative;
     margin: 0;
     display: flex;
@@ -44,7 +44,7 @@
     align-items: center;
 }
 
-.accordion-item .accordion-item-desc {
+.accordion-itemzx .accordion-item-descwer {
     /* display: none; */
     /* font-size: 14px; */
     line-height: 22px;
@@ -56,19 +56,19 @@
     height: 50px;
 }
 
-.accordion-item input[type="checkbox"] {
+.accordion-itemzx input[type="checkbox"] {
     position: absolute;
     height: 0;
     width: 0;
     opacity: 0;
 }
 
-.accordion-item input[type="checkbox"]:checked~.accordion-item-desc {
+.accordion-itemzx input[type="checkbox"]:checked~.accordion-item-descwer {
     display: block;
     height: fit-content;
 }
 
-.accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon:after {
+.accordion-itemzx input[type="checkbox"]:checked~.accordion-item-titlewertx .icon:after {
     content: "Read Less";
     border: 1px solid var(--Primary);
     /* background-color: var(--Primary); */
@@ -78,7 +78,7 @@
     padding: 0.2rem 0.6rem;
 }
 
-.accordion-item input[type="checkbox"]~.accordion-item-title .icon:after {
+.accordion-itemzx input[type="checkbox"]~.accordion-item-titlewertx .icon:after {
     content: "Readmore";
     border: 1px solid var(--Primary);
     /* background-color: var(--Primary); */
@@ -88,11 +88,11 @@
     padding: 0.2rem 0.6rem;
 }
 
-.accordion-item:first-child {
+.accordion-itemzx:first-child {
     margin-top: 0;
 }
 
-.accordion-item .icon {
+.accordion-itemzx .icon {
     margin-left: 14px;
 }
 
@@ -104,7 +104,7 @@
     .accordion h1 {
         font-size: 22px;
     }
-    .accordion-item input[type="checkbox"]:checked~.accordion-item-title .icon:after {
+    .accordion-itemzx input[type="checkbox"]:checked~.accordion-item-titlewertx .icon:after {
         content: "-";
         border: 1px solid var(--Primary);
         /* background-color: var(--Primary); */
@@ -114,7 +114,7 @@
         padding: 0.2rem 0.6rem;
     }
     
-    .accordion-item input[type="checkbox"]~.accordion-item-title .icon:after {
+    .accordion-itemzx input[type="checkbox"]~.accordion-item-titlewertx .icon:after {
         content: "+";
         border: 1px solid var(--Primary);
         /* background-color: var(--Primary); */

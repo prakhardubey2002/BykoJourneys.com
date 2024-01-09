@@ -4,13 +4,13 @@ const DestinationAbout = ({ name }) => {
     return (
         <div className={styles.accordion}>
             <h1>Frequently <span> Asked Questions</span></h1>
-            <div className={styles['accordion-item']}>
-                <input type="checkbox" id="accordion1" />
-                <label htmlFor="accordion1" className={styles['accordion-item-title']}>
+            <div className={styles['accordion-itemzx']}>
+                <input type="checkbox" id="accordion12" />
+                <label htmlFor="accordion12" className={styles['accordion-item-titlewertx']}>
                     <span className={styles.icon}></span>
                     About {name} Tour Packages
                 </label>
-                <div className={styles['accordion-item-desc']}>
+                <div className={styles['accordion-item-descwer']}>
                     Byko Journeys stands out as a premier travel provider for several compelling reasons, each rooted in our core values.
 
                     First and foremost, we take pride in managing all trips end-to-end with our dedicated in-house operations team. This commitment ensures that there are no third-party involvements, guaranteeing transparency and dismissing any uncertainties associated with fishy claims. When we say your travel plan is 100% our responsibility, it's a promise we wholeheartedly mean.

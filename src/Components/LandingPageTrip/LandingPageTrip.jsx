@@ -16,7 +16,7 @@ import useFetch from '../../hooks/useFetch';
 const LandingPageTrip = () => {
     const { eventdata, setEventdata } = useGlobalContext();
 
-    const { data: eventapiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/package/getall');
+    const { data: eventapiData, isPending, error } = useFetch(`${process.env.REACT_APP_BACKEND_LINK}api/package/getall`);
     useEffect(() => {
         // Update eventcontent only when apiData or isPending changes
         setEventdata({
@@ -44,18 +44,18 @@ const LandingPageTrip = () => {
                 breakpoints={{
 
                     280: {
-                      // width: 280,
-                      slidesPerView: 1,
+                        // width: 280,
+                        slidesPerView: 1,
                     },
                     857: {
-                      // width: 576,
-                      slidesPerView: 2,
+                        // width: 576,
+                        slidesPerView: 2,
                     },
                     1200: {
-                      // width: 768,
-                      slidesPerView: 3,
+                        // width: 768,
+                        slidesPerView: 3,
                     },
-                  }}
+                }}
                 autoplay={{
                     delay: 2000,
                     pauseOnMouseEnter: true,

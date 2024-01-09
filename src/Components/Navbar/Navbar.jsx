@@ -6,8 +6,8 @@ import { useGlobalContext } from '../../context/AppContext';
 
 const Navbar = () => {
   const { navcontent, setNavcontent } = useGlobalContext();
-  
-  const { data: apiData, isPending, error } = useFetch('https://bykojourney.adaptable.app/api/location/getbycategory');
+
+  const { data: apiData, isPending, error } = useFetch(`${process.env.REACT_APP_BACKEND_LINK}api/location/getbycategory`);
   useEffect(() => {
     // Update navcontent only when apiData or isPending changes
     setNavcontent({
@@ -16,6 +16,7 @@ const Navbar = () => {
       error: error,
       load: isPending,
     });
+    console.log(process.env.BACKEND_LINK);
   }, [apiData, isPending, error]);
 
   return (
