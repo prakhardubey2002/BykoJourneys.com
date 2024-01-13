@@ -28,54 +28,57 @@ const LandingPageTrip = () => {
     }, [eventapiData, isPending, error]);
     return (
 
+        <div className={styles.tripmain}>
 
-        <div className={styles.tripssection}>
-            <div>
-                <h2>
-                    Tick amazing <span> experience</span> off your bucket list
-                </h2>
+
+            <div className={styles.tripssection}>
+
+                <div>
+                    <h2>
+                        Tick amazing <span> experience</span> off your bucket list
+                    </h2>
+                </div>
+                <br />
+                <Swiper className={styles.tripslide}
+
+                    modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+                    spaceBetween={4}
+                    slidesPerView={3}
+                    breakpoints={{
+
+                        280: {
+                            // width: 280,
+                            slidesPerView: 1,
+                        },
+                        857: {
+                            // width: 576,
+                            slidesPerView: 2,
+                        },
+                        1200: {
+                            // width: 768,
+                            slidesPerView: 3,
+                        },
+                    }}
+                    autoplay={{
+                        delay: 2000,
+                        pauseOnMouseEnter: true,
+                        disableOnInteraction: false
+                    }}
+                    loop
+
+                >
+                    {
+                        !isPending && eventapiData?.map((eventx) => (
+                            // console.log(eventx)
+                            <SwiperSlide className={styles.slides}  >
+                                <Tripcard key={eventx._id} data={eventx} />
+                            </SwiperSlide>
+                        ))
+                    }
+
+                </Swiper>
             </div>
-            <br />
-            <Swiper className={styles.tripslide}
-
-                modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                spaceBetween={4}
-                slidesPerView={3}
-                breakpoints={{
-
-                    280: {
-                        // width: 280,
-                        slidesPerView: 1,
-                    },
-                    857: {
-                        // width: 576,
-                        slidesPerView: 2,
-                    },
-                    1200: {
-                        // width: 768,
-                        slidesPerView: 3,
-                    },
-                }}
-                autoplay={{
-                    delay: 2000,
-                    pauseOnMouseEnter: true,
-                    disableOnInteraction: false
-                }}
-                loop
-
-            >
-                {
-                    !isPending && eventapiData?.map((eventx) => (
-                        // console.log(eventx)
-                        <SwiperSlide className={styles.slides}  >
-                            <Tripcard key={eventx._id} data={eventx} />
-                        </SwiperSlide>
-                    ))
-                }
-
-            </Swiper>
         </div>
-
     )
 }
 

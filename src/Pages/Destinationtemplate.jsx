@@ -10,6 +10,8 @@ import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 import Faq from '../Components/FAQ/Faq';
 import Review from "../Components/Reviewsection/Review"
 import DestinationSport from '../Components/DestinationSport/DestinationSport';
+import DestinationTopDestination from '../Components/DestinationTopDestination/DestinationTopDestination';
+import DestinationFood from '../Components/DestinationFood/DestinationFood';
 const Destinationtemplate = () => {
   const { id, name } = useParams();
   return (
@@ -43,8 +45,10 @@ const Destinationtemplate = () => {
       </div>
       <div className="destinationaboutsection">
         <DestinationAbout name={name} />
-        {/* <LandingPageTrip /> */}
+        <LandingPageTrip />
         <DestinationSport/>
+        <DestinationTopDestination/>
+        <DestinationFood/>
         <Review/>
         <Faq />
 
