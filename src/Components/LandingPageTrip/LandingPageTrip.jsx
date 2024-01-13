@@ -39,7 +39,7 @@ const LandingPageTrip = () => {
             <Swiper className={styles.tripslide}
 
                 modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-                spaceBetween={20}
+                spaceBetween={4}
                 slidesPerView={3}
                 breakpoints={{
 

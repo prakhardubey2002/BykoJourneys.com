@@ -9,6 +9,7 @@ import DestinationAbout from '../Components/DestinationAbout/DestinationAbout';
 import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 import Faq from '../Components/FAQ/Faq';
 import Review from "../Components/Reviewsection/Review"
+import DestinationSport from '../Components/DestinationSport/DestinationSport';
 const Destinationtemplate = () => {
   const { id, name } = useParams();
   return (
@@ -42,7 +43,8 @@ const Destinationtemplate = () => {
       </div>
       <div className="destinationaboutsection">
         <DestinationAbout name={name} />
-        <LandingPageTrip />
+        {/* <LandingPageTrip /> */}
+        <DestinationSport/>
         <Review/>
         <Faq />
 

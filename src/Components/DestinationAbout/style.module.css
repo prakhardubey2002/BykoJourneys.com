@@ -2,7 +2,7 @@
 .accordion {
     display: flex;
     flex-direction: column;
-    max-width: 80vw;
+    max-width: 88vw;
     /* min-width: 320px; */
     margin: 50px auto;
     padding: 10px 50px;
