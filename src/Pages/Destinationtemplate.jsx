@@ -12,6 +12,7 @@ import Review from "../Components/Reviewsection/Review"
 import DestinationSport from '../Components/DestinationSport/DestinationSport';
 import DestinationTopDestination from '../Components/DestinationTopDestination/DestinationTopDestination';
 import DestinationFood from '../Components/DestinationFood/DestinationFood';
+import Eventpackage from '../Components/EventPackage/Eventpackage';
 const Destinationtemplate = () => {
   const { id, name } = useParams();
   return (
@@ -45,7 +46,8 @@ const Destinationtemplate = () => {
       </div>
       <div className="destinationaboutsection">
         <DestinationAbout name={name} />
-        <LandingPageTrip />
+        {/* <LandingPageTrip /> */}
+        <Eventpackage/>
         <DestinationSport/>
         <DestinationTopDestination/>
         <DestinationFood/>
