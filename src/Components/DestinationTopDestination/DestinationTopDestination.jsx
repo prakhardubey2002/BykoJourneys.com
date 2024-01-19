@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from "./style.module.css"
 import demo from "./demo.jpg"
-import AvTimerIcon from '@mui/icons-material/AvTimer';
 import FmdGoodIcon from '@mui/icons-material/FmdGood';
 const DestinationTopDestination = () => {
   return (
