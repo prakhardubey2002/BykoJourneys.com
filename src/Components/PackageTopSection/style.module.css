@@ -1,0 +1,94 @@
+.Packagetopimgsection {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.Packagetopimgsection .Packagetopbackgroundimage {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.Packagetopimgsection .Packageoverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.Packagetopimgsection .PackageText {
+    position: absolute;
+   bottom: 24%;
+    left: 6%;
+    /* line-height: 1.8rem; */
+}
+
+.Packagetopimgsection .PackageText p {
+    /* height: 5vw; */
+    width: 44vw;
+    overflow: hidden;
+    font-size: 1.5vw;
+    text-align: left;
+    color: rgb(255, 255, 255);
+}
+
+.Packagetopimgsection .PackageText h2 {
+    font-size: 4.5vw;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    max-width: 80vw;
+}
+
+.Packagetopimgsection .tabs {
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    color: var(--light);
+}
+.Packagetopimgsection .tabs button{
+    outline: none;
+    border: 0;
+    padding: 8px 12px;
+    margin: 0.8rem 1rem;
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--light);
+    background-color: var(--Primary);
+    transition: 0.2s all ease-in-out;
+}
+.Packagetopimgsection .tabs button:hover{
+    transform: scale(1.08);
+}
+.Packagetopimgsection .tabs button a{
+    text-decoration: none;
+    color: inherit;
+}
+@media screen and (max-width: 600px) {
+    .Packagetopimgsection .PackageText p{
+        height: auto;
+        width: 80vw;
+        font-size: 3.5vw;
+        padding-left: 6vw;
+        padding-bottom: 2vw;
+        line-height: 1.2rem;
+    }
+    .Packagetopimgsection .PackageText h2{
+        font-size: 9vw;
+        padding-left: 6vw;
+        line-height: 2.2rem;
+    }
+}

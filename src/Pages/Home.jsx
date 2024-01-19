@@ -14,9 +14,6 @@ import LandingPageTrip from '../Components/LandingPageTrip/LandingPageTrip';
 import Review from "../Components/Reviewsection/Review"
 import Faq from '../Components/FAQ/Faq';
 const Home = () => {
-
-
-
   return (
     <div >
       <div className="Home">
@@ -55,7 +52,7 @@ const Home = () => {
         </div>
       </div>
       <TopValues />
-       <Explorethumbnail />
+      <Explorethumbnail />
       <div className="expertcontactsection">
         <div className="top">
           <h2>
@@ -74,9 +71,9 @@ const Home = () => {
 
       </div>
       <LandingPageSlider />
-      <LandingPageTrip  />
+      <LandingPageTrip />
       <Review />
-      <Faq/>
+      <Faq />
     </div>
   )
 }

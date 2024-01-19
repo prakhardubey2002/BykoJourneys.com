@@ -5,7 +5,7 @@ const Packagetemplate = () => {
     const { id, name } = useParams();
     return (
         <div className='Packagemain' >
-            <PackageTopSection/>
+            <PackageTopSection name={name} />
         </div>
     )
 }
