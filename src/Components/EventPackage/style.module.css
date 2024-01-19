@@ -32,6 +32,13 @@
     width: 100%;
 }
 
+.Eventmain .card .up {
+    /* max-width: 80%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .Eventmain .top p {
     /* color: #444; */
     /* font-size: 14px;  */
@@ -46,6 +53,7 @@
 .Eventmain .bottom {
     display: flex;
     flex-wrap: wrap;
+
 }
 
 .Eventmain .bottom a {
@@ -64,9 +72,11 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     transition: 0.3s all ease-in-out;
 }
-.Eventmain .bottom .card:hover{
+
+.Eventmain .bottom .card:hover {
     transform: scale(1.02);
 }
+
 .Eventmain .bottom .card img {
     max-width: 80vw;
     width: 360px;
@@ -92,29 +102,42 @@
     border-radius: 0.4rem;
     cursor: pointer;
 }
-.Eventmain .bottom .card .down .detail{
-display: flex;
-justify-content: space-between;
+
+.Eventmain .bottom .card .down .detail {
+    display: flex;
+    justify-content: space-between;
 }
-.Eventmain .bottom .card .down .detail .duration,.location{
+
+.Eventmain .bottom .card .down .detail .duration,
+.location {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.Eventmain .bottom .card .down .dates{
+
+.Eventmain .bottom .card .down .dates {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.Eventmain .bottom .card .down .icon{
+
+.Eventmain .bottom .card .down .icon {
     margin: 0.4rem 0.4rem;
     color: var(--Primary);
 }
-.Eventmain .bottom .card .down h4{
+
+.Eventmain .bottom .card .down h4 {
     font-size: 1.2rem;
     margin: 0.2rem 0;
 }
+
 @media screen and (max-width: 767px) {
+    .Eventmain .bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
     h2 {
         width: 100%;
