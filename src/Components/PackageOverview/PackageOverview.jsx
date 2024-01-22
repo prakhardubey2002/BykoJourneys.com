@@ -9,6 +9,7 @@ import Dates from './options/Dates'
 import Otherinfo from './options/Otherinfo'
 import Itinerary from './options/Itineraryoption'
 import Demo from "./demo.jpg"
+import PackageTestimonials from '../PackageTestimonials/PackageTestimonials';
 const PackageOverview = () => {
     const [option, setOption] = useState("about");
     function change(optionx) {
@@ -127,6 +128,7 @@ const PackageOverview = () => {
                             <img className={styles.images} src={Demo} alt="TravelImages" />
                         </div>
                     </div>
+                    <PackageTestimonials/>
                 </div>
                 <div className={styles.right} >
                     <div className={styles.top} >
