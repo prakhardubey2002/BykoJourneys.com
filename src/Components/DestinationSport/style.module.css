@@ -49,6 +49,7 @@
     max-width: 80vw;
     width: 360px;
     height: 200px;
+    max-width: 100%;
 }
 
 .sportdestinationmain .main .sportcardcontainer .sportcard .bottom {
@@ -64,7 +65,7 @@
 .sportdestinationmain .main .sportcardcontainer .sportcard .bottom .upper .tag {
     border: 1px solid var(--Primary);
     padding: 0.2rem;
-    margin: 0.2rem ;
+    margin: 0.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,9 +74,11 @@
     font-size: 14px;
     transition: 0.3s all ease-in-out;
 }
-.sportdestinationmain .main .sportcardcontainer .sportcard .bottom .upper .tag:nth-child(1){
-    margin-left:0 ;
+
+.sportdestinationmain .main .sportcardcontainer .sportcard .bottom .upper .tag:nth-child(1) {
+    margin-left: 0;
 }
+
 .sportdestinationmain .main .sportcardcontainer .sportcard .bottom .upper .tag:hover {
     transform: translateY(-2px);
     background-color: var(--Primary);
@@ -107,8 +110,9 @@ p {
     /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
 
 }
+
 @media only screen and (max-width: 768px) {
-    .sportdestinationmain .main h2  {
+    .sportdestinationmain .main h2 {
         width: 100%;
         font-size: 1.6rem;
         line-height: 1.8rem;
@@ -117,6 +121,11 @@ p {
 
 }
 
-@media only screen and (min-width: 280px) and (max-width: 568px) {
-    
+@media only screen and (max-width: 1280px) {
+
+    .sportdestinationmain .main .sportcardcontainer .sportcard {
+        width: 300px;
+    }
 }
+
+@media only screen and (min-width: 280px) and (max-width: 568px) {}

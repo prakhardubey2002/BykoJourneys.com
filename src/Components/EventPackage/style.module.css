@@ -78,9 +78,9 @@
 }
 
 .Eventmain .bottom .card img {
-    max-width: 80vw;
     width: 360px;
     height: 200px;
+    max-width: 100%;
 }
 
 .Eventmain .bottom .card .down {
@@ -144,5 +144,17 @@
         font-size: 1.6rem;
         line-height: 1.8rem;
         padding: 0.4rem 0;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+
+    .Eventmain .bottom .card {
+        width: 300px;
+    }
+    .Eventmain .bottom{
+        justify-content: flex-start;
+        align-items: center;
+        /* background-color: aliceblue; */
     }
 }

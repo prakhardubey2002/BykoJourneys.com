@@ -53,7 +53,7 @@ const Eventpackage = () => {
                                             <div className={styles.location} >
                                                 <LocationOnIcon className={styles.icon} />
                                                 <span>
-                                                {data.packageDetails.location}
+                                                    {data.packageDetails.location}
                                                 </span>
 
                                             </div>

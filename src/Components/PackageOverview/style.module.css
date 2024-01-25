@@ -90,7 +90,7 @@
     color: rgb(58, 58, 58);
     margin-top: 32px;
     font-size: 1vw;
-    line-height: 1.5vw;
+    line-height: 1.4vw;
 
     text-align: justify;
 }
@@ -107,6 +107,7 @@
     outline: none;
     border-radius: 1rem;
     margin: 0.4rem;
+    max-width: 80vw;
 }
 
 .PackageOverview .Packagemain .photosection {
@@ -150,6 +151,7 @@
     border-radius: 1rem;
     margin: 0.4rem;
     text-align: center;
+    max-width: 80vw;
 }
 .PackageOverview .Packagemain .right .bottom .input{
     display: flex;
@@ -182,4 +184,42 @@
     color: var(--light);
     font-weight: 600;
     font-weight: 1.4rem;
+}
+@media only screen and (max-width: 1280px) {
+
+    .PackageOverview .Packagemain {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .PackageOverview .Packagemain .left {
+        width: 100%;
+    }
+    .PackageOverview .Packagemain .right {
+        width: 100%;
+    }
+    .PackageOverview .Packagemain .videosection {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .PackageOverview .Packagemain .photosection {
+        flex-wrap: wrap;
+      
+    
+    }
+    
+.PackageOverview .Packagemain .photosection .imagecontainer .images
+    {
+        max-width: 45%;
+    }
+    .PackageOverview .Packagemain .PackageContent p {
+        color: rgb(58, 58, 58);
+        margin-top: 12px;
+        font-size: 12px;
+        line-height: 1rem;
+        text-align: justify;
+    }
+    
 }

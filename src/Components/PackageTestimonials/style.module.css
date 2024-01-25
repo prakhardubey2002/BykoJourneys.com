@@ -17,16 +17,23 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 2rem;
     width: 220px;
-    min-height: 320px;
+    min-height: 280px;
     max-width: 80vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     margin: 0.2rem;
     /* padding: 1rem; */
     /* position: relative; */
     /* background-color: aliceblue; */
+}
+.Testimonialsmain .reviewcontainer .card p{
+    color: rgb(58, 58, 58);
+    /* margin-top: 12px; */
+    font-size: 12px;
+    line-height: 1rem;
+    text-align: justify;
 }
 .Testimonialsmain .reviewcontainer .card .text{
     color: rgb(58, 58, 58);
@@ -38,7 +45,7 @@
 }
 .Testimonialsmain .reviewcontainer .card .text h2{
     font-size: 1.2rem;
-    margin: 0.1rem 0;
+    margin: 1px 0;
 }
 .Testimonialsmain .reviewcontainer .card .text .star{
     color: var(--Primary);
@@ -70,4 +77,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+@media only screen and (max-width: 1280px) {
+    .Testimonialsmain .reviewcontainer {
+        justify-content: center;
+        align-items: center;
+    }
+    .sportdestinationmain .main .sportcardcontainer .sportcard {
+        width: 300px;
+    }
 }
